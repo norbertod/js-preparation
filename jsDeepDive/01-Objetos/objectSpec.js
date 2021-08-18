@@ -15,9 +15,9 @@ describe('Propiedades de un object-literal', function() {
       expect(obj.p).toEqual(5);
     });
 
-    it('agrega la propiedad plataforma también a 5', function() {
+    it('agrega la propiedad javascript también a 5', function() {
       // Podemos acceder a la propiedad con `dot-notation` o con el bracket-notation.
-      expect(obj['plataforma']).toEqual(5);
+      expect(obj['javascript']).toEqual(5);
     });
 
     it("agrega la propiedad 'proximo', con una función que devolverá el próximo valor al pasado por parámetro", function() {

@@ -49,7 +49,7 @@ Un comando esta formado por varias partes:
 Por ejemplo 
 
 ``` bash
-$ cd plataforma5  // command + argument
+$ cd javascript  // command + argument
 
 $ ls -a  // command + option
 

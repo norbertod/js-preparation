@@ -24,7 +24,7 @@ Tengo mis archivos, entonces inicialicemos la carpeta como un repositorio de git
 
 ``` bash
 $ git init
-# Initialized empty Git repository in /home/cafeparatodos/plataforma5/prep/git/local/test/.git/
+# Initialized empty Git repository in /home/cafeparatodos/javascript/prep/git/local/test/.git/
 ```
 
 Excelente! nos dice que se creo el repositorio, ¿que implica eso? que se creo una carpeta oculta `.git` con todos los archivos y configuraciones propias de nuestro repositorio.

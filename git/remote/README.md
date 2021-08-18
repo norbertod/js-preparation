@@ -8,7 +8,7 @@ Para poder colaborar en cualquier proyecto Git, necesitamos saber cómo gestiona
 
 Lo primero que tenemos que hacer es registrarnos en [GitHub](https://github.com/join).
 
-GitHub es una plataforma de desarrollo colaborativo, es gratuita y te permite guardar repositorios de git para trabajar de manera distribuida solo o con tu equipo.
+GitHub es una javascript de desarrollo colaborativo, es gratuita y te permite guardar repositorios de git para trabajar de manera distribuida solo o con tu equipo.
 
 ### Nuevo repositorio
 
@@ -36,7 +36,7 @@ Una vez que hayamos seteado nuestro repositorio remoto, pasemos a trabajar en el
 
 ``` bash
 $ git init
-# Initialized empty Git repository in /home/cafeparatodos/plataforma5/prep/git/remote/test/.git/
+# Initialized empty Git repository in /home/cafeparatodos/javascript/prep/git/remote/test/.git/
 
 ```
 

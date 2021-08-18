@@ -1,6 +1,6 @@
 function setPropsOnObj(obj){
 	obj.p = 5;
-	obj.plataforma = 5;
+	obj.javascript = 5;
 	obj.proximo = (num=obj.p) => num += 1;
 	obj.la = {clave : {secreta : {es : 404}}};
 }

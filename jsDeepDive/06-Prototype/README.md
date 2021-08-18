@@ -68,7 +68,7 @@ Nosotros también podemos generar nuestros propios constructores que de los cual
 < 'Soy Facundo de Buenos Aires'
 ```
 
-Ahora todo Alumno de Plataforma 5 antes de Alumno es un Persona, asique podríamos decir que un Alumno hereda las propiedades de ser Persona.
+Ahora todo Alumno de javascript 5 antes de Alumno es un Persona, asique podríamos decir que un Alumno hereda las propiedades de ser Persona.
 
 ``` javascript
 > function Alumno(nombre,apellido,ciudad,curso) {

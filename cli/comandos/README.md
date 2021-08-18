@@ -9,11 +9,11 @@ Hagamos una prueba con algunos comandos clásicos así nos familiarizamos con su
 Empezamos con `echo`, este comando imprime los argumentos que le pasemos en la consola. Recibe un INPUT y genera un OUTPUT en la consola
 
 ``` bash
-$ echo hola plataforma5
-# hola plataforma5
+$ echo hola javascript
+# hola javascript
 ```
 
-> En este caso "hola" y "plataforma5" son argumentos distintos, separados por el espacio, si quisiéramos que fuera todo un solo argumento tendríamos que cambiar el comando a `echo "hola plataforma5"`, ambas maneras funcionan.
+> En este caso "hola" y "javascript" son argumentos distintos, separados por el espacio, si quisiéramos que fuera todo un solo argumento tendríamos que cambiar el comando a `echo "hola javascript"`, ambas maneras funcionan.
 
 * #### List
 
@@ -21,7 +21,7 @@ Un comando muy util y que van a usar constantemente es `ls` (list), sirve para l
 
 ``` bash
 $ ls
-# Desktop    Downloads  plataforma5  Videos 
+# Desktop    Downloads  javascript  Videos 
 # Documents  Pictures   Public
 ```
 
@@ -30,7 +30,7 @@ $ ls
 Si queremos listar una carpeta mas adentro solo hay que pasarlo como argumento
 
 ``` bash
-$ ls plataforma5
+$ ls javascript
 # bootcamp    intro     pledu      prep 
 ```
 
@@ -50,13 +50,13 @@ $ man ls
 Todo genial por ahora pero solo estamos trabajando desde la carpeta `home`, para movernos en nuestro disco podemos usar el comando `cd` (change directory) pasándole como argumento la carpeta a la que queramos acceder.
 
 ``` bash
-$ cd plataforma5
+$ cd javascript
 ```
 
 Si queremos entrar en una carpeta mas profunda podemos pasar como argumento la ruta entera separadas las carpetas por `/`
 
 ``` bash
-$ cd plataforma5/prep/cli
+$ cd javascript/prep/cli
 ```
 
 > la tecla `Tab` nos permite auto completar la carpeta que estamos escribiendo, prueben escribir la mitad de una carpeta y apretar `Tab` (no va a funcionar si hay dos carpetas que se llamen igual hasta donde nosotros escribimos)
@@ -75,7 +75,7 @@ Moviéndonos tanto de carpeta puede que quieran saber la dirección de donde est
 
 ``` bash
 $ pwd
-# /home/cafeparatodos/plataforma5/prep/cli
+# /home/cafeparatodos/javascript/prep/cli
 ```
 
 
