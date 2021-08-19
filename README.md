@@ -1,4 +1,4 @@
-# Bootcamp Prep
+# Js-preparation Prep
 
 Material de preparación para la pre aceleracion con React
 

@@ -98,11 +98,11 @@ Descartemos esta opción.
     this.instituto = 'P5';
   }
 
-> var goyo = new Alumno('Goyo', 'Tralice', 'Tucuman', 'Bootcamp')
+> var goyo = new Alumno('Goyo', 'Tralice', 'Tucuman', 'Js-preparation')
 
 // Ahora si tenemos nuestra instancia creada a partir de ambos constructores
 > goyo.curso
-< Bootcamp
+< Js-preparation
 
 > goyo.apellido
 < Tralice
@@ -127,7 +127,7 @@ Vamos a solucionar ese problema agregando al prototipo los métodos de Persona, 
 // si recuerdan el objeto prototype siempre tenia una propiedad constructor que hacia referencia a la función en si, con la asignación que hicimos arriba lo pisamos, por lo que deberíamos volver a agregarlo.
 > Alumno.prototype.constructor = Alumno
 
-> var guille = new Alumno('Guille','Aszyn','Montevideo','Bootcamp')
+> var guille = new Alumno('Guille','Aszyn','Montevideo','Js-preparation')
 
 > guille.saludar()
 < 'Soy Guille de Montevideo'
@@ -141,7 +141,7 @@ Para completar nuestro ejemplo creemos un método que solo pueda acceder un Alum
 
 ``` javascript
 > Alumno.prototype.inscribirme = function (curso) {
-    cursosArr = ['Bootcamp','Introductorio','Backend']
+    cursosArr = ['Js-preparation','Introductorio','Backend']
     // si el curso esta entre alguno de los ofrecidos 
     if (cursosArr.includes(curso)) {
       this.curso = curso;
@@ -151,7 +151,7 @@ Para completar nuestro ejemplo creemos un método que solo pueda acceder un Alum
   }
 
 > guille.curso
-< 'Bootcamp'
+< 'Js-preparation'
 
 > guille.inscribirme('Introductorio')
 

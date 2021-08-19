@@ -31,7 +31,7 @@ Si queremos listar una carpeta mas adentro solo hay que pasarlo como argumento
 
 ``` bash
 $ ls javascript
-# bootcamp    intro     pledu      prep 
+# js-preparation    intro     pledu      prep 
 ```
 
 * #### Manual

@@ -28,7 +28,7 @@ Vamos a usar un framework de testing que nos va a facilitar la estructuración d
 
 ## Preparación
 
-Para correr los test a lo largo del prep vamos a necesitar instalar un par de programas que nos van a acompañar a lo largo del Bootcamp.
+Para correr los test a lo largo del prep vamos a necesitar instalar un par de programas que nos van a acompañar a lo largo del Js-preparation.
 
 ### NodeJS
 

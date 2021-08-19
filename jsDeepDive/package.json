@@ -1,5 +1,5 @@
 {
-  "name": "bootcampprep",
+  "name": "js-preparation",
   "version": "1.0.0",
   "description": "curso introductorio para la pre aceleracion",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atralice/BootcampPrep/tree/master/jsDeepDive"
+    "url": "https://github.com/dvelezroman/js-preparation/tree/master/jsDeepDive"
   },
   "author": "Dario Velez Roman",
   "license": "ISC",
