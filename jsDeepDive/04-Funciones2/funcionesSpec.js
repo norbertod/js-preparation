@@ -1,7 +1,7 @@
 describe('La propiedad arguments', function() {
   it('`concatenar` me permite unir dos strings', function() {
-    var string = concatenar('Facundo ', 'Velasco');
-    expect(string).toEqual('Facundo Velasco');
+    var string = concatenar('dariondo ', 'Velasco');
+    expect(string).toEqual('dariondo Velasco');
   });
 
   // Recuerden que arguments se parece a un Array pero no lo es.
@@ -147,7 +147,7 @@ describe('La lista secreta', function(){
         codigoSecreto;
 
     beforeEach(function(){
-      arregloInvitados = ['Facu', 'Santi', 'Toni', 'Guille', 'Solano', 'Leo'];
+      arregloInvitados = ['dario', 'Coco', 'Goyo', 'Guille', 'Solano', 'Leo'];
       codigoSecreto = 404;
 
       funcionesInvitados = ListaDeFuncionesInvitados(arregloInvitados, codigoSecreto);
@@ -176,7 +176,7 @@ describe('La lista secreta', function(){
     it('Las funciones en `funcionesInvitados` devuelve un invitado de `arregloInvitados` al pasarle el código', function(){
       var invitado = funcionesInvitados[0](codigoSecreto);
 
-      expect(invitado).toEqual('Facu');
+      expect(invitado).toEqual('dario');
     });
 
     it('Debería devolver el string `código secreto: invalido` si el código es incorrecto', function() {
@@ -211,7 +211,7 @@ describe('La lista secreta', function(){
         codigoSecreto;
 
     beforeEach(function() {
-      arregloInvitados = ['Facu', 'Santi', 'Toni', 'Guille', 'Solano', 'Leo'],
+      arregloInvitados = ['dario', 'Coco', 'Goyo', 'Guille', 'Solano', 'Leo'],
       codigoSecreto = 404;
 
       funcionesInvitados = ListaDeFuncionesInvitados(arregloInvitados, codigoSecreto);
@@ -236,7 +236,7 @@ describe('La lista secreta', function(){
     it('`listaOficial` debería tener la lista original de invitados', function() {
       var listaOficial = armarListaDeInvitados(funcionesInvitados, codigoSecreto);
 
-      expect(listaOficial).toEqual(['Facu', 'Santi', 'Toni', 'Guille', 'Solano', 'Leo']);
+      expect(listaOficial).toEqual(['dario', 'Coco', 'Goyo', 'Guille', 'Solano', 'Leo']);
 
     });
   });

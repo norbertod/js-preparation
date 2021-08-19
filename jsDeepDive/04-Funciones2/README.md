@@ -84,7 +84,7 @@ Veamos un simple ejemplo donde podríamos usarlos, esto se conoce cómo __functi
 
 ``` javascript
 > var persona2 = {
-    nombre: 'Santi',
+    nombre: 'Coco',
     apellido: 'Scanlan'
   };
 ```
@@ -93,7 +93,7 @@ Ahora, vamos a pedirle prestado el método `getNombre` a la primera _persona_ y 
 
 ``` javascript
 > persona.getNombre.call(persona2);
-< 'Santi Scanlan'
+< 'Coco Scanlan'
 ```
 
 Con esto pudimos invocar un método de un objeto, pero usándolo con otro!
@@ -134,21 +134,21 @@ Lo que hicimos fue _invocar la función inmediatamente después de escribir la e
 ``` javascript
 > var hola = function(nombre) {
     return 'Hola ' + nombre;
-  }('Toni')
+  }('Goyo')
 
 > hola
-< 'Hola Toni'
+< 'Hola Goyo'
 ```
 
-Podemos usar todo lo que sabemos de funciones con las IIFE, en el ejemplo de arriba la función recibe un parámetro, que se lo pasamos cuando la invocamos inmediatamente. Luego de ejecutar eso, la variable `hola` va a contener el string `Hola Toni`.
+Podemos usar todo lo que sabemos de funciones con las IIFE, en el ejemplo de arriba la función recibe un parámetro, que se lo pasamos cuando la invocamos inmediatamente. Luego de ejecutar eso, la variable `hola` va a contener el string `Hola Goyo`.
 
 También podemos declarar funciones anónimas en una `function expression` y __ejecutarla__ sin tener que guardarla en ningún lugar, la ejecutamos como si fuera cualquier expresión, para eso voy a tener que envolver la declaración de la función con `()` (de hecho lo hacemos para _engañar al syntax parser_):
 
 ``` javascript
 > (function(nombre){
     console.log(nombre);
-  }('Toni')) // IIFE
-< Toni
+  }('Goyo')) // IIFE
+< Goyo
 ```
 
 Este es el clásico ejemplo de una _IIFE_, este patrón lo vas a ver en casi todos las librerías y frameworks que hay hoy. Ya que nos permite ejecutar código _sobre la marcha_. Además, cuando llega a esa linea, y ejecuta esa función, el interprete invoca la función y por lo tanto crea un nuevo _contexto de ejecución_ para ese código. Por lo tanto, las variables que declare adentro, van a estar viviendo en ese nuevo _contexto_ y no en el __contexto global__. Esto último es lo más importante de este patrón, ya que nos crea un nuevo _namespace_ sólo para nosotros y estamos seguros que no vamos a colisionar con variables que fueron declaradas en el contexto global por otras personas (Justamente por esto, los frameworks y librerías utilizan fuertemente este patrón).
@@ -158,7 +158,7 @@ A veces es necesario acceder al objeto global dentro de nuestra función. Lo que
 ``` javascript
 > (function(global, nombre){
     console.log(nombre);
-  }(window, 'Toni')) // IIFE
+  }(window, 'Goyo')) // IIFE
 ```
 
 De esta forma, tenemos acceso al objeto global y estamos protegidos de cualquier accidente. Nuestro código está a salvo!
@@ -176,8 +176,8 @@ Otro tema importante en JavaScript es `closures`. Un __*clousure*__ es la habili
 
 > var saludarHola = saludar('Hola'); // Esto devuelve una función
 
-> saludarHola('Toni');
-< 'Hola Toni'
+> saludarHola('Goyo');
+< 'Hola Goyo'
 ```
 
 Veamos paso a paso lo que va a ocurrir cuando ejecutemos este código. Primero se creará el `contexto de ejecución global`, en esta etapa el interprete guardará espacio para la declaración de la función `saludar`. Luego, cuando se encuentra con la invocación a la función `saludar`, va a crear un nuevo contexto, y como vemos dentro de ese contexto la variable saludo va a tomar el valor que le pasamos por parámetro:`'Hola'`. El stack quedaría cómo está representado en la primera parte de la figura de abajo.

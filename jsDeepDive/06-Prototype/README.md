@@ -29,10 +29,10 @@ El método `assign` de los objetos te permite agregar propiedades a un objeto pa
 > var obj = {}
 
 // No hace falta guardar el resultado porque los objetos se pasan por `referencia`
-> Object.assign(obj, {nombre:'facu', apellido:'velasco'})
+> Object.assign(obj, {nombre:'dario', apellido:'velasco'})
 
 > obj.nombre
-< 'facu' 
+< 'dario' 
 ```
 
 ## Herencia Clásica
@@ -62,10 +62,10 @@ Nosotros también podemos generar nuestros propios constructores que de los cual
     console.log('Soy '+this.nombre+' de '+this.ciudad);
   }
 
-> var facu = new Persona('Facundo', 'Velasco', 'Buenos Aires');
+> var dario = new Persona('dariondo', 'Velasco', 'Buenos Aires');
 
-> facu.saludar()
-< 'Soy Facundo de Buenos Aires'
+> dario.saludar()
+< 'Soy dariondo de Buenos Aires'
 ```
 
 Ahora todo Alumno de javascript 5 antes de Alumno es un Persona, asique podríamos decir que un Alumno hereda las propiedades de ser Persona.
@@ -98,17 +98,17 @@ Descartemos esta opción.
     this.instituto = 'P5';
   }
 
-> var toni = new Alumno('Toni', 'Tralice', 'Tucuman', 'Bootcamp')
+> var goyo = new Alumno('Goyo', 'Tralice', 'Tucuman', 'Bootcamp')
 
 // Ahora si tenemos nuestra instancia creada a partir de ambos constructores
-> toni.curso
+> goyo.curso
 < Bootcamp
 
-> toni.apellido
+> goyo.apellido
 < Tralice
 
-> toni.saludar()
-< Uncaught TypeError: toni.saludar is not a 'function'
+> goyo.saludar()
+< Uncaught TypeError: goyo.saludar is not a 'function'
 // que paso?
 ```
 
@@ -160,10 +160,10 @@ Para completar nuestro ejemplo creemos un método que solo pueda acceder un Alum
 
 // y ahora probemoslo para alguien que no sea alumno
 
-> var facu = new Persona('Facundo', 'Velasco', 'Buenos Aires')
+> var dario = new Persona('dariondo', 'Velasco', 'Buenos Aires')
 
-> facu.inscribirse('Backend');
-< Uncaught TypeError: facu.inscribirse is not a 'function'
+> dario.inscribirse('Backend');
+< Uncaught TypeError: dario.inscribirse is not a 'function'
   // Excelente!
 ```
 

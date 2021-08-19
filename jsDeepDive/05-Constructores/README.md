@@ -43,8 +43,8 @@ Veamos algunos ejemplos:
     }
   }
 
-> var facu = {
-    nombre: 'Facundo',
+> var dario = {
+    nombre: 'dariondo',
     apellido: 'Velasco'
   }
 
@@ -54,7 +54,7 @@ Veamos algunos ejemplos:
 
 // Ahora podemos usar los métodos de `persona`
 > juan.getNombre();
-< 'Facundo Velasco'
+< 'dariondo Velasco'
 ```
 
 #### Todo elemento es un Objeto
@@ -101,12 +101,12 @@ El metodo `hasOwnProperty` nos permite saber si la propiedad es del objeto o si 
 
 ``` javascript
 // siguiendo con el ejemplo de mas arriba
-> facu.hasOwnProperty('getNombre');
+> dario.hasOwnProperty('getNombre');
 < false
 
-> facu.saludo = function() { console.log('hola!') }
+> dario.saludo = function() { console.log('hola!') }
 
-> facu.hasOwnProperty('saludo');
+> dario.hasOwnProperty('saludo');
 < true
 ```
 
@@ -132,10 +132,10 @@ Veamos la estructura de un constructor
     this.apellido = ape;
   }
 
-> var facu = new Persona('Facundo', 'Velasco')
+> var dario = new Persona('dariondo', 'Velasco')
 
-> facu
-< Persona {nombre:'Facundo', apellido:'Velasco'}
+> dario
+< Persona {nombre:'dariondo', apellido:'Velasco'}
 ```
 
 > Los nombre de las funciones constructoras se ponen con la primer letra en mayúscula por convención, así poder reconocer cuando una función es un constructor.
@@ -154,8 +154,8 @@ Qué ven de raro en la función `Persona()`? por empezar no retorna nada, y adem
 Y asi podemos crear muchas _**instancias**_ distintas a partir de esta función constructora.
 
 ``` javascript
-var toni = new Persona('Toni', 'Tralice');
-var santi = new Persona('Santi', 'Scanlan');
+var goyo = new Persona('Goyo', 'Tralice');
+var coco = new Persona('Coco', 'Scanlan');
 var guille = new Persona('Guille', 'Aszyn');
 ```
 
@@ -164,7 +164,7 @@ var guille = new Persona('Guille', 'Aszyn');
 Si queremos saber si un objeto es una instancia de cierto constructor podemos usar el metodo `instanceof`
 
 ``` javascript
-> toni instanceof Persona
+> goyo instanceof Persona
 < true
 ```
 
@@ -189,14 +189,14 @@ Veamos un ejemplo.
     return this.nombre+' tiene '+this.edad+' años.'
   }
 
-// en el momento de la invocación con 'new' se le asigna a 'facu' el prototype
+// en el momento de la invocación con 'new' se le asigna a 'dario' el prototype
 // de la función, entonces la instancia va a tendrá acceso al método
-> var facu = new Persona('facu',25);
+> var dario = new Persona('dario',25);
 
-> facu.hablar()
-< 'facu tiene 25 años.'
+> dario.hablar()
+< 'dario tiene 25 años.'
 
-> facu.__proto__.hablar
+> dario.__proto__.hablar
 ```
 
 Mediante el objeto `prototype` puedo asignarle métodos a las instancias, y como estas hacen referencia a `prototype` los métodos no tienen que ser agregados antes de las instancias.
@@ -207,14 +207,14 @@ Mediante el objeto `prototype` puedo asignarle métodos a las instancias, y como
     this.edad = edad;
   }
 
-> var facu = new Persona('facu',25);
+> var dario = new Persona('dario',25);
 
 > Persona.prototype.hablar = function(){ 
     return this.nombre+' tiene '+this.edad+' años.'
   }
 
-> facu.hablar()
-< 'facu tiene 25 años.'
+> dario.hablar()
+< 'dario tiene 25 años.'
 ```
 
 Y conociendo el `prototype chain` podemos agregar elementos a cualquier tipo de dato que podamos apuntar.
@@ -232,10 +232,10 @@ Si quisieramos saber a que prototype corresponde, podriamos usar el metodos `get
 
 ``` javascript
 // siguiendo el ejemplo de más arriba
-> Object.getPrototypeOf(facu)
+> Object.getPrototypeOf(dario)
 < Object {hablar: 'function', constructor: 'function'}
 
 // lo que hace es mostrar el `prototype` del objeto pasado
-> Object.getPrototypeOf(facu) === Persona.prototype
+> Object.getPrototypeOf(dario) === Persona.prototype
 < true
 ```

@@ -58,16 +58,16 @@ Un valor __*mutable*__, se imaginaran, se refiere a los elementos que pueden ser
 
 ``` javascript
 // creo un objeto en la variable `obj`
-> var obj = { nombre: 'facu' }
+> var obj = { nombre: 'dario' }
 < undefined
 
 // muestro la propiedad del objeto
 > obj.nombre
-< 'facu'
+< 'dario'
 
 // defino una función que cambie ese objeto
 > function cambiarPropiedad(objeto) {
-    objeto.nombre = 'toni'
+    objeto.nombre = 'goyo'
   }
 < undefined
 
@@ -77,7 +77,7 @@ Un valor __*mutable*__, se imaginaran, se refiere a los elementos que pueden ser
 
 // veo la propiedad ya modificada
 > obj.nombre
-< 'toni'
+< 'goyo'
 ```
 
 ## Estructura de los Objetos
@@ -89,7 +89,7 @@ Cuando declaramos uno con su estructura completa los llamamos object literals.
 
 ``` javascript
 var obj = {
-  nombre: 'facu',
+  nombre: 'dario',
   edad: 25,
   ciudad: 'buenos aires',
 }
@@ -103,7 +103,7 @@ El `key`, llamado **propiedad** en JavaScript es un string con algunas restricci
 
 ``` javascript
 var obj = {
-  nombre: 'facu', // nombre es la propiedad, facu es el value
+  nombre: 'dario', // nombre es la propiedad, dario es el value
   edad: 25,
   ciudad: 'buenos aires',
 }
@@ -132,7 +132,7 @@ Hay dos formas de acceder a las propiedades de un objeto
 ``` javascript
 // a partir del ejemplo anterior
 > obj.nombre
-< 'facu'
+< 'dario'
 
 > obj.ciudad
 < 'buenos aires'
@@ -156,7 +156,7 @@ No se puede acceder a la propiedad si el nombre esta guardado en una variable, y
 
 ``` javascript
 > obj['nombre']
-< 'facu'
+< 'dario'
 
 > obj['ciudad']
 < 'buenos aires'
@@ -171,6 +171,6 @@ Este método puede ser usado para buscar propiedades a partir de variables
 
 // ahora busco la propiedad nombre usando la variable prop
 > obj[prop]
-< 'facu'
+< 'dario'
 // busca a partir del valor de la variable y no la variable en si, por lo que consigue el valor que buscábamos
 ```

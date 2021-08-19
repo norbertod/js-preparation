@@ -17,10 +17,10 @@ function scopes() {
 }
 
 function bloque(){
-  var nombre = 'Facu';
+  var nombre = 'dario';
 
   function cambio(){
-    var nombre = 'Toni';
+    var nombre = 'Goyo';
   }
 
   if (true) {

@@ -8,13 +8,13 @@ Prueben esto en la consola.
     console.log('soy un objeto');
   }
 
-> funcionObjeto.nombre = 'facu';
+> funcionObjeto.nombre = 'dario';
 
 > funcionObjeto();
 < 'soy un objeto'
 
 > funcionObjeto.nombre
-< 'facu'
+< 'dario'
 
 > funcionObjeto.name
 < 'funcionObjeto'

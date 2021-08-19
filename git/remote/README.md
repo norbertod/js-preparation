@@ -53,7 +53,7 @@ $ git remote -v
 Como no hubo output eso significa que no hay ninguna relación, así que creemos la nuestra. Usando `git remote add` vamos a poder hacer la vinculación.
 
 ``` bash
-$ git remote add origin https://github.com/facuvelasco/test.git
+$ git remote add origin https://github.com/dvelezroman/test.git
 ```
 
 Como podemos ver este comando tiene varios argumentos, `origin` es el nombre que con el que vamos a asociar nuestro remoto, es el nombre por convencion, pero podemos poner cualquier nombre que lo represente. Vamos a usar este nombre cuando nos conectemos con el servidor así que no se lo olviden! (aunque pueden buscarlo siempre en `git remote -v`).
@@ -64,8 +64,8 @@ Para ver si el vinculo se produjo correctamente volvemos a correr `git remote -v
 
 ``` bash
 $ git remote -v
-# origin  https://github.com/facuvelasco/test (fetch)
-# origin  https://github.com/facuvelasco/test (push)
+# origin  https://github.com/dvelezroman/test (fetch)
+# origin  https://github.com/dvelezroman/test (push)
 ```
 
 Genial, ya tenemos nuestros repositorios vinculados para ida y vuelta de información.
@@ -94,7 +94,7 @@ $ git pull origin master
 # remote: Counting objects: 3, done.
 # remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 # Unpacking objects: 100% (3/3), done.
-# From https://github.com/facuvelasco/test
+# From https://github.com/dvelezroman/test
 #  * branch            master     -> FETCH_HEAD
 #  * [new branch]      master     -> origin/master
 ```
@@ -154,14 +154,14 @@ $ git push origin master
 
 ``` bash
 $ git push origin master
-# Username for 'https://github.com': facuvelasco
-# Password for 'https://facuvelasco@github.com': 
+# Username for 'https://github.com': dvelezroman
+# Password for 'https://dvelezroman@github.com': 
 # Counting objects: 4, done.
 # Delta compression using up to 4 threads.
 # Compressing objects: 100% (2/2), done.
 # Writing objects: 100% (4/4), 345 bytes | 0 bytes/s, done.
 # Total 4 (delta 0), reused 0 (delta 0)
-# To https://github.com/facuvelasco/test
+# To https://github.com/dvelezroman/test
 #    6d51e91..99187e6  master -> master
 ```
 
@@ -182,7 +182,7 @@ $ rm -r test
 Y ahora clono el repositorio que esta en GitHub ya armado.
 
 ``` bash
-$ git clone https://github.com/facuvelasco/test
+$ git clone https://github.com/dvelezroman/test
 # Cloning into 'test'...
 # remote: Counting objects: 7, done.
 # remote: Compressing objects: 100% (3/3), done.

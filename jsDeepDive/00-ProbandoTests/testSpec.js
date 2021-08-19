@@ -8,7 +8,7 @@ describe('Función `saludar`', function() {
   });
 
   it('Si recibe un parámetro debería saludar a alguien', function() {
-    expect(saludar('Toni')).toEqual("Hola, Toni!");
+    expect(saludar('Goyo')).toEqual("Hola, Goyo!");
   });
 });
 
