@@ -16,7 +16,7 @@ Hagan click en el boton de `fork` arriba a la derecha.
 Una vez terminado vamos a estar en un nuevo repo de nuestra pertenencia, vamos a `clonar` dicho repositorio a nuestra computadora con lo que aprendimos en el modulo de [_git_](../git).
 Cuando lo tengamos en un repositorio local, vamos a trabajar directamente en el editor de texto. Vayan avanzando en cada modulo del JSDeepDive de manera ordenada leyendo primero el README.md(se ve mejor en el browser) y luego los Spec.
 
-* [Usando Test](./00-ProbandoTests/)
+<!-- * [Usando Test](./00-ProbandoTests/) -->
 * [Tipos de Datos y Objetos (Repaso)](./01-Objetos/)
 * [JavaScript Teorico](./02-JsTeorico/)
 * [Intro a Functions](./03-Funciones1/)
@@ -30,6 +30,6 @@ Cuando lo tengamos en un repositorio local, vamos a trabajar directamente en el 
 
 * [JavaScript documentation](https://developer.mozilla.org/es/docs/Web/JavaScript)
 * [CodePen: Entorno de Prueba](https://codepen.io/pen/)
-* [Jasmine Docs](https://jasmine.github.io/2.0/introduction.html)
+<!-- * [Jasmine Docs](https://jasmine.github.io/2.0/introduction.html) -->
 * [YouDontKnowJS - Book Series](https://github.com/getify/You-Dont-Know-JS)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
