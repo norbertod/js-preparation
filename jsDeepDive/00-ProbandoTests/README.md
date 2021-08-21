@@ -49,7 +49,7 @@ Testem es una pequeña librería de testeo que nos va a permitir validar fácilm
 para instalarlo vamos a entrar en la consola correr el comando:
 
 ``` bash
-$ sudo npm install testem -g
+$ npm install testem -g
 ```
 
 Recuerden que el signo `$` es solo el prompt de su consola, el comando empieza en el npm.
